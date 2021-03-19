@@ -1,0 +1,13 @@
+
+#title {
+    color: red;
+}
+
+#main-content{
+    border: solid black 2px;
+    padding: 30px;
+    font-size: 25px;
+    height: 200px
+}
+
+

@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Node EJS Boilerplate</title>
+  <meta name="author" content="Matt Denney">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id='main-content'>
+    <% if(data.val1 == 0 ){ %>
+      <div>Value 1:
+       <%- data.val1%>
+      </div>
+    <% } else { %>
+      <div>No Value 1</div>
+    <% } %>
+  </div>
+  <script>
+    const data = <%- JSON.stringify(data) %>
+    <%- include('./script.js')%>
+  </script>
+</body>
+</html>
+
